@@ -1,0 +1,12 @@
+while True:
+    start_number = input('Starting number: ')
+    while start_number != 1:
+        if float(start_number) == 1:
+            print(float(start_number))
+            break
+        elif float(start_number) % 2 == 0:
+            start_number = float(start_number) // 2
+            print(start_number)
+        else:
+            start_number = float(start_number) * 3 + 1
+            print(float(start_number))
